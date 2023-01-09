@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Connexion</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>
+        <label for="username">Nom d'ututilisateur</label>
+        <input id="username" name="username" type="text">
+    </p>
+    <p>
+        <label for="password">Mot de passe</label>
+        <input id="password" name="password" type="password">
+    </p>
+    <button type="submit">Connexion</button>
+</form>
+
+{% endblock %}
