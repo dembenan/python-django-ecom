@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Django E-commerce Website.
 
 ### Cloning the repository
@@ -63,3 +64,6 @@ python manage.py runserver
 
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
 
+=======
+# python-django-ecom
+Creation d'un petit site exemple ecommerce avec python django
