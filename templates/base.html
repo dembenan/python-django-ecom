@@ -15,6 +15,13 @@
       <a href="{% url 'login' %}">Connexion</a>
       <a href="{% url 'signup' %}">s'inscrire</a>
     {% endif %}
+    {% if user.cart %}
+    <a style = "color:{% if user.cart.orders.count > 0 %} green {% else %} black {% endif %} ;" href="{% url 'cart' %}">Mon panier({{  user.cart.orders.count }})</a>
+    
+    {% endif %}
+
+
+
     {% block content %}
     {% endblock %}
   </body>
